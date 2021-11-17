@@ -1,0 +1,86 @@
+
+
+
+
+
+import java.util.Scanner;
+
+public class AI091793_20211110_HW5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int x = 0;
+		x=(int)(Math.random()*3+1);
+		System.out.println("1.剪刀,2.石頭.3.布");
+		Scanner scanner = new Scanner(System.in);
+		int num=scanner.nextInt();
+		switch(x) {
+			case 1:
+				switch(num) {
+					case 1:
+						System.out.println("你出剪刀");
+						System.out.println("電腦出剪刀");
+						System.out.println("平手");
+						break;
+					case 2:
+						System.out.println("你出石頭");
+						System.out.println("電腦出剪刀");
+						System.out.println("使用者贏");
+						break;
+					case 3:
+						System.out.println("你出布");
+						System.out.println("電腦出剪刀");
+						System.out.println("電腦贏");
+						
+
+
+						
+						
+				}
+				break;
+			case 2:
+				switch(num) {
+					case 1:
+						System.out.println("你出剪刀");
+						System.out.println("電腦出石頭");
+						System.out.println("電腦贏");
+						break;
+					case 2:
+						System.out.println("你出石頭");
+						System.out.println("電腦出石頭");
+						System.out.println("平手");
+						break;
+					case 3:
+						System.out.println("你出布");
+						System.out.println("電腦出石頭");
+						System.out.println("使用者贏");
+				
+		}
+			break;
+		case 3:
+				switch(num) {
+					case 1:
+						System.out.println("你出剪刀");
+						System.out.println("電腦出布");
+						System.out.println("使用者贏");
+						break;
+					case 2:
+						System.out.println("你出石頭");
+						System.out.println("電腦出布");
+						System.out.println("電腦贏");
+						break;
+					case 3:
+						System.out.println("你出布");
+						System.out.println("電腦出布");
+						System.out.println("平手");
+		
+		
+		
+	}
+				break;
+				
+
+}
+	}
+}
+	
