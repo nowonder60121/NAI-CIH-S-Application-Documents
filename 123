@@ -1,0 +1,43 @@
+package ;
+public class  {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int row = 10;
+		int col = 20;
+
+		/*for (int i=0; i<row; i++) {//請根據下列程式修改成對角線不印星號
+
+			for (int j=0; j<col; j++) {
+				if (j%2 == 1) {
+					System.out.print("*");
+				} else {
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}*/
+		int k=1;//起始點左上第一個不印的位置
+		int k2=19;//起始點右上第一個不印的位置
+	for (int i=0; i<row; i++) {
+		for (int j=0; j<col; j++) {
+			if (j%2 == 1) {
+				if(j == k||j == k2) {
+					System.out.print(" ");
+					continue;
+				}
+				System.out.print("*");
+			} else {
+				System.out.print(" ");
+			}
+			
+		}
+		k+=2;//由於斜角所以出來迴圈後要加2及減2
+		k2-=2;
+		System.out.println();
+	}
+		
+		
+	}
+
+}
